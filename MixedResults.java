@@ -79,6 +79,32 @@ public class MixedResults {
     System.out.println( Math.random() + "\t" + Math.random() );
     System.out.println( Math.PI );
     
+    /*
+     * Other Math methods
+     * 
+     * Math.log(x);       == log base e of x
+     * Math.sin(x);       == sin of angle x in radians
+     * Math.cos(x);       == cos of angle x in radians
+     * Math.tan(x);       == tan of angle x in radians
+     * Math.asin(x);      == arcisne of x in radians -PI/2 to PI/2
+     * Math.acos(x);      == arccosine of x in radians -PI/2 to PI/2
+     * Math.atan(x);      == arctan of x in range -PI/2 to PI/2
+     * Math.toDegrees(x); == converts radians to degrees
+     * Math.toRadians(x); == converts degrees to radians
+     */
+     
+    /*
+     * Project: ComputeThis
+     * 
+     * Print: d1 = 3PIsin(187deg) + |cos(122deg)| = -0.618672237585067
+     * Print: d2 = (14.72)^3.801 + ln72 = 27496.9888867001543
+     */
+    
+    double d10 = 3 * Math.PI * Math.sin(Math.toRadians(187)) + Math.abs( Math.cos( Math.toRadians(122) ) );
+    double d20 = Math.pow(14.72, 3.801) + Math.log(72);
+    System.out.println( "d1 = " + d10 );
+    System.out.println( "d2 = " + d20 );
+    
     
     
   } // end main method
